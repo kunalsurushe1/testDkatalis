@@ -47,29 +47,27 @@ public class actions {
 
 	@Keyword
 	def clickContinue(){
-		
-		driver.switchTo().frame("snap-midtrans")
-		System.out.println("********We are switch to the iframe*******");
-		
-		driver.findElement(By.xpath("//a[(@href='#/select-payment')]")).click()
-		
-		WebUI.delay(GlobalVariable.GLOBAL_SHORTDELAY)
 
+		driver.switchTo().frame("snap-midtrans")
+		System.out.println("********We are switching to the iframe*******");
+
+		driver.findElement(By.xpath("//a[(@href='#/select-payment')]")).click()
+
+		WebUI.delay(GlobalVariable.GLOBAL_SHORTDELAY)
 	}
 
 	@Keyword
 	def clickPaymentMethod(){
-		
+
 		driver.findElement(By.xpath("//div[contains(text(),'Credit/Debit Card')]")).click()
 
 		WebUI.delay(GlobalVariable.GLOBAL_SHORTDELAY)
-
 	}
 
 	@Keyword
 
 	def enterCardNumber (dataSheet,rowNo) {
-		
+
 		driver.findElement(By.xpath("//input[contains(@name,'cardnumber')]")).sendKeys(findTestData(dataSheet).getValue('CardNumber', rowNo));
 
 		WebUI.delay(GlobalVariable.GLOBAL_SHORTDELAY)
@@ -78,7 +76,7 @@ public class actions {
 	@Keyword
 
 	def enterExpiry (dataSheet,rowNo) {
-				
+
 		driver.findElement(By.xpath("//input[contains(@placeholder,'MM / YY')]")).sendKeys(findTestData(dataSheet).getValue('ExpiryDate', rowNo));
 
 		WebUI.delay(GlobalVariable.GLOBAL_SHORTDELAY)
@@ -90,11 +88,11 @@ public class actions {
 		driver.findElement(By.xpath("//input[contains(@placeholder,'MM / YY')]/parent::*/following-sibling::*/input")).sendKeys(findTestData(dataSheet).getValue('CVVNumber', rowNo));
 		WebUI.delay(GlobalVariable.GLOBAL_SHORTDELAY)
 	}
-	
+
 	@Keyword
 	def clickPayNow(){
 		//WebUI.waitForElementVisible(findTestObject('Object Repository/cocoStore/pageHeadingCocoStore'), 20, FailureHandling.STOP_ON_FAILURE)
-		
+
 		driver.findElement(By.xpath("//a[(@href='#/')]")).click()
 
 		WebUI.delay(GlobalVariable.GLOBAL_SHORTDELAY)
