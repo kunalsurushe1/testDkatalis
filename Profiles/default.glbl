@@ -4,4 +4,19 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'envDetails'</initValue>
+      <name>envDetails</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>5</initValue>
+      <name>GLOBAL_SHORTDELAY</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'paymentMethod'</initValue>
+      <name>paymentMethod</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

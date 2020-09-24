@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>E2E_CardPayment_SuccessfulTransaction</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ad8b5e90-7e90-4ae2-bb09-d715cfb678ea</testCaseGuid>
+</TestCaseEntity>

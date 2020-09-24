@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>E2E_CardPayment_FailedTransaction</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>533282fb-79f9-426a-b438-4fec626865f1</testCaseGuid>
+</TestCaseEntity>
